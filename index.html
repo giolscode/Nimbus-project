@@ -7,11 +7,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>nimbus-project</title>
   </head>
-  <body class="bg-blue-500">
+
+  <body class="bg-linear-to-b from-purple-950 to-black h-screen text-white">
     <div id="app">
-      <div></div>
-      <h1 class="text-2xl font-bold">Nimbus</h1>
+      <div class="flex justify-between p-4 bg-black">
+        <h1 class="text-lg font-bold text-purple-500">Nimbus</h1>
+        <button type="button" class="bg-purple-500 font-bold px-4 py-2">
+          Se connecter
+        </button>
+      </div>
+
+      <div class="flex flex-col justify-center text-center mt-20 gap-4">
+        <h2 class="text-5xl font-bold mb-4">
+          Toutes vos séries, <br />sans coupure publicitaire.
+        </h2>
+
+        <p class="text-gray-400">
+          Un seul abonnement, un accès illimité. Regardez où vous voulez, quand
+          vous voulez, <br />résiliable à tout moment.
+        </p>
+      </div>
+
+      <div class="flex justify-center mt-8 gap-5">
+        <input
+          type="text"
+          class="bg-gray-600 p-10 py-3 rounded-sm border-gray-300"
+          placeholder="Adresse-mail"
+        />
+        <button
+          type="button"
+          class="bg-purple-500 font-bold px-4 py-2 rounded-sm"
+        >
+          Commencer
+        </button>
+      </div>
+
+      <div class="flex flex-col mt-8 gap-5 m-5 w-screen justify-items-center">
+        <div class="flex mb-4">
+          <h3 class="text-left font-bold text-2xl">Tendances du moment</h3>
+        </div>
+
+        <div class="flex flex-row gap-2 m-5 justify-center">
+          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
+          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
+          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
+          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
+          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
+        </div>
+      </div>
+
+      <div class="flex flex-col mt-8 gap-5 m-5 w-screen">
+        <div class="flex mb-4">
+          <h3 class="text-left font-bold text-2xl">Nouveautés</h3>
+        </div>
+
+        <div class="flex flex-row gap-2 m-5">
+          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
+          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
+          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
+          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
+          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
+        </div>
+      </div>
+
+      <div class="flex flex-row">
+        <div
+          class="flex flex-col rounded-xl max-w-sm bg-gray-800 p-4 m-5 gap-4"
+        >
+          <h4 class="font-bold">Qualité 4K</h4>
+          <p class="text-gray-400">
+            Une image nette sur tous vos écrans compatibles.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col rounded-xl max-w-sm bg-gray-800 p-4 m-5 gap-4"
+        >
+          <h4 class="font-bold">Plusieurs écrans</h4>
+          <p class="text-gray-400">
+            Une image nette sur tous vos écrans compatibles.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col rounded-xl max-w-sm bg-gray-800 p-4 m-5 gap-4"
+        >
+          <h4 class="font-bold">Téléchargement</h4>
+          <p class="text-gray-400">
+            Une image nette sur tous vos écrans compatibles.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col rounded-xl max-w-sm bg-gray-800 p-4 m-5 gap-4"
+        >
+          <h4 class="font-bold">Résiliable à tout moment</h4>
+          <p class="text-gray-400">
+            Une image nette sur tous vos écrans compatibles.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+
+        <h3 class="flex justify-center">Questions fréquentes</h3>
+        <div class="flex flex-col mt-8 gap-5 m-5 w-screen">
+
+          <div class="flex flex-col">
+            <div class="flex flex-col rounded-xl max-w-lg bg-gray-800 p-4 m-5 gap-4">
+              <p>Combien coûte Nimbus?</p>
+            </div>
+
+            <div class="flex flex-col rounded-xl max-w-lg bg-gray-800 p-4 m-5 gap-4">
+              <p>Où puis-je regarder Nimbus?</p>
+            </div>
+            <div class="flex flex-col rounded-xl max-w-lg bg-gray-800 p-4 m-5 gap-4">
+              <p>Comment résilier mon abonnement?</p>
+            </div>
+          </div>
+
+      </div>
+
+      <footer class="border-t-gray-400"></footer>
     </div>
-    <!-- <script type="module" src="/src/main.js"></script> -->
   </body>
 </html>
