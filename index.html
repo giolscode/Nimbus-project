@@ -1,134 +1,133 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="/src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>nimbus-project</title>
+    <title>Nimbus</title>
   </head>
 
-  <body class="bg-linear-to-b from-purple-950 to-black h-screen text-white">
-    <div id="app">
-      <div class="flex justify-between p-4 bg-black">
-        <h1 class="text-lg font-bold text-purple-500">Nimbus</h1>
-        <button type="button" class="bg-purple-500 font-bold px-4 py-2">
+  <body class="min-h-screen bg-slate-950 text-white antialiased">
+    <header class="border-b border-slate-800 bg-slate-950">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
+        <a href="#" class="text-2xl font-bold text-violet-500 transition-colors duration-200 hover:text-purple-300">Nimbus</a>
+        <button
+          type="button"
+          class="cursor-pointer rounded-sm bg-violet-600 px-4 py-2 text-sm font-bold transition duration-200 hover:-translate-y-0.5 hover:bg-violet-500 hover:shadow-lg hover:shadow-purple-500/40 active:translate-y-0"
+        >
           Se connecter
         </button>
       </div>
+    </header>
 
-      <div class="flex flex-col justify-center text-center mt-20 gap-4">
-        <h2 class="text-5xl font-bold mb-4">
-          Toutes vos séries, <br />sans coupure publicitaire.
-        </h2>
+    <main>
 
-        <p class="text-gray-400">
+      <section class="bg-gradient-to-b from-purple-950/60 to-slate-950 px-6 pt-24 pb-32 text-center">
+        <h1 class="mx-auto max-w-3xl text-5xl font-extrabold leading-tight md:text-6xl">
+          Toutes vos séries, sans coupure publicitaire.
+        </h1>
+        <p class="mx-auto mt-6 max-w-2xl text-lg text-slate-300">
           Un seul abonnement, un accès illimité. Regardez où vous voulez, quand
-          vous voulez, <br />résiliable à tout moment.
+          vous voulez, résiliable à tout moment.
         </p>
+
+        <form class="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <input
+            type="email"
+            placeholder="Adresse e-mail"
+            class="w-full max-w-xs rounded-sm border border-slate-700 bg-slate-800 px-4 py-3 text-white placeholder-slate-400 transition duration-200 hover:border-slate-500 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/40 focus:outline-none"
+          />
+          <button
+            type="submit"
+            class="cursor-pointer rounded-sm bg-violet-600 px-6 py-3 font-bold transition duration-200 hover:-translate-y-0.5 hover:bg-violet-500 hover:shadow-lg hover:shadow-purple-500/40 active:translate-y-0"
+          >
+            Commencer →
+          </button>
+        </form>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 pt-8">
+        <h2 class="mb-6 text-2xl font-semibold">Tendances du moment</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+          <div class="h-56 w-38 cursor-pointer rounded-md bg-gradient-to-br from-purple-700 to-slate-800 transition duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 hover:ring-2 hover:ring-white/60"></div>
+          <div class="h-56 w-38 cursor-pointer rounded-md bg-gradient-to-br from-sky-700 to-slate-800 transition duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 hover:ring-2 hover:ring-white/60"></div>
+          <div class="h-56 w-38 cursor-pointer rounded-md bg-gradient-to-br from-rose-700 to-slate-800 transition duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 hover:ring-2 hover:ring-white/60"></div>
+          <div class="h-56 w-38 cursor-pointer rounded-md bg-gradient-to-br from-orange-700 to-slate-800 transition duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 hover:ring-2 hover:ring-white/60"></div>
+          <div class="h-56 w-38 cursor-pointer rounded-md bg-gradient-to-br from-emerald-700 to-slate-800 transition duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 hover:ring-2 hover:ring-white/60"></div>
+          <div class="h-56 w-38 cursor-pointer rounded-md bg-gradient-to-br from-purple-700 to-slate-800 transition duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 hover:ring-2 hover:ring-white/60"></div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 pt-16">
+        <h2 class="mb-6 text-2xl font-semibold">Nouveautés</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+          <div class="h-56 w-38 cursor-pointer rounded-md bg-gradient-to-br from-slate-700 to-slate-800 transition duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 hover:ring-2 hover:ring-white/60"></div>
+          <div class="h-56 w-38 cursor-pointer rounded-md bg-gradient-to-br from-sky-700 to-slate-800 transition duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 hover:ring-2 hover:ring-white/60"></div>
+          <div class="h-56 w-38 cursor-pointer rounded-md bg-gradient-to-br from-emerald-700 to-slate-800 transition duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 hover:ring-2 hover:ring-white/60"></div>
+          <div class="h-56 w-38 cursor-pointer rounded-md bg-gradient-to-br from-rose-700 to-slate-800 transition duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 hover:ring-2 hover:ring-white/60"></div>
+          <div class="h-56 w-38 cursor-pointer rounded-md bg-gradient-to-br from-orange-700 to-slate-800 transition duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 hover:ring-2 hover:ring-white/60"></div>
+          <div class="h-56 w-38 cursor-pointer rounded-md bg-gradient-to-br from-purple-700 to-slate-800 transition duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 hover:ring-2 hover:ring-white/60"></div>
+        </div>
+      </section>
+
+      <section class="mx-auto grid max-w-6xl gap-6 px-6 pt-32 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-lg border border-slate-800 bg-slate-900 p-6 transition duration-300 hover:-translate-y-1 hover:border-purple-500 hover:bg-slate-800 hover:shadow-lg hover:shadow-purple-500/20">
+          <h3 class="text-lg font-semibold">Qualité 4K</h3>
+          <p class="mt-2 text-sm text-slate-400">Une image nette sur tous vos écrans compatibles.</p>
+        </div>
+        <div class="rounded-lg border border-slate-800 bg-slate-900 p-6 transition duration-300 hover:-translate-y-1 hover:border-purple-500 hover:bg-slate-800 hover:shadow-lg hover:shadow-purple-500/20">
+          <h3 class="text-lg font-semibold">Plusieurs écrans</h3>
+          <p class="mt-2 text-sm text-slate-400">Jusqu'à 4 profils sur un seul abonnement.</p>
+        </div>
+        <div class="rounded-lg border border-slate-800 bg-slate-900 p-6 transition duration-300 hover:-translate-y-1 hover:border-purple-500 hover:bg-slate-800 hover:shadow-lg hover:shadow-purple-500/20">
+          <h3 class="text-lg font-semibold">Téléchargement</h3>
+          <p class="mt-2 text-sm text-slate-400">Regardez hors connexion, en avion ou en déplacement.</p>
+        </div>
+        <div class="rounded-lg border border-slate-800 bg-slate-900 p-6 transition duration-300 hover:-translate-y-1 hover:border-purple-500 hover:bg-slate-800 hover:shadow-lg hover:shadow-purple-500/20">
+          <h3 class="text-lg font-semibold">Résiliable à tout moment</h3>
+          <p class="mt-2 text-sm text-slate-400">Aucun engagement, aucune surprise sur la facture.</p>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-3xl px-6 pt-32 pb-20">
+        <h2 class="mb-6 text-2xl font-semibold">Questions fréquentes</h2>
+        <div class="flex flex-col gap-3">
+          <details class="rounded-md border border-slate-800 bg-slate-900 transition duration-200 hover:border-purple-500/60 hover:bg-slate-800">
+            <summary class="cursor-pointer px-4 py-4 font-semibold">Combien coûte Nimbus ?</summary>
+          </details>
+          <details class="rounded-md border border-slate-800 bg-slate-900 transition duration-200 hover:border-purple-500/60 hover:bg-slate-800">
+            <summary class="cursor-pointer px-4 py-4 font-semibold">Où puis-je regarder Nimbus ?</summary>
+          </details>
+          <details class="rounded-md border border-slate-800 bg-slate-900 transition duration-200 hover:border-purple-500/60 hover:bg-slate-800">
+            <summary class="cursor-pointer px-4 py-4 font-semibold">Comment résilier mon abonnement ?</summary>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800">
+      <div class="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-6 py-12 text-sm md:grid-cols-4">
+        <div class="flex flex-col gap-3">
+          <h4 class="font-semibold">Assistance</h4>
+          <a href="#" class="text-slate-400 transition-colors duration-200 hover:text-white">Centre d'aide</a>
+          <a href="#" class="text-slate-400 transition-colors duration-200 hover:text-white">Contact</a>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h4 class="font-semibold">Entreprise</h4>
+          <a href="#" class="text-slate-400 transition-colors duration-200 hover:text-white">À propos</a>
+          <a href="#" class="text-slate-400 transition-colors duration-200 hover:text-white">Carrières</a>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h4 class="font-semibold">Légal</h4>
+          <a href="#" class="text-slate-400 transition-colors duration-200 hover:text-white">Confidentialité</a>
+          <a href="#" class="text-slate-400 transition-colors duration-200 hover:text-white">Conditions</a>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h4 class="font-semibold">Nimbus</h4>
+          <p class="text-slate-400">© 2026 Nimbus. Tous droits réservés.</p>
+        </div>
       </div>
-
-      <div class="flex justify-center mt-8 gap-5">
-        <input
-          type="text"
-          class="bg-gray-600 p-10 py-3 rounded-sm border-gray-300"
-          placeholder="Adresse-mail"
-        />
-        <button
-          type="button"
-          class="bg-purple-500 font-bold px-4 py-2 rounded-sm"
-        >
-          Commencer
-        </button>
-      </div>
-
-      <div class="flex flex-col mt-8 gap-5 m-5 w-screen justify-items-center">
-        <div class="flex mb-4">
-          <h3 class="text-left font-bold text-2xl">Tendances du moment</h3>
-        </div>
-
-        <div class="flex flex-row gap-2 m-5 justify-center">
-          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
-          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
-          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
-          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
-          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
-        </div>
-      </div>
-
-      <div class="flex flex-col mt-8 gap-5 m-5 w-screen">
-        <div class="flex mb-4">
-          <h3 class="text-left font-bold text-2xl">Nouveautés</h3>
-        </div>
-
-        <div class="flex flex-row gap-2 m-5">
-          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
-          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
-          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
-          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
-          <div class="w-50 h-80 bg-purple-900 rounded-md"></div>
-        </div>
-      </div>
-
-      <div class="flex flex-row">
-        <div
-          class="flex flex-col rounded-xl max-w-sm bg-gray-800 p-4 m-5 gap-4"
-        >
-          <h4 class="font-bold">Qualité 4K</h4>
-          <p class="text-gray-400">
-            Une image nette sur tous vos écrans compatibles.
-          </p>
-        </div>
-
-        <div
-          class="flex flex-col rounded-xl max-w-sm bg-gray-800 p-4 m-5 gap-4"
-        >
-          <h4 class="font-bold">Plusieurs écrans</h4>
-          <p class="text-gray-400">
-            Une image nette sur tous vos écrans compatibles.
-          </p>
-        </div>
-
-        <div
-          class="flex flex-col rounded-xl max-w-sm bg-gray-800 p-4 m-5 gap-4"
-        >
-          <h4 class="font-bold">Téléchargement</h4>
-          <p class="text-gray-400">
-            Une image nette sur tous vos écrans compatibles.
-          </p>
-        </div>
-
-        <div
-          class="flex flex-col rounded-xl max-w-sm bg-gray-800 p-4 m-5 gap-4"
-        >
-          <h4 class="font-bold">Résiliable à tout moment</h4>
-          <p class="text-gray-400">
-            Une image nette sur tous vos écrans compatibles.
-          </p>
-        </div>
-      </div>
-
-      <div class="flex justify-center">
-
-        <h3 class="flex justify-center">Questions fréquentes</h3>
-        <div class="flex flex-col mt-8 gap-5 m-5 w-screen">
-
-          <div class="flex flex-col">
-            <div class="flex flex-col rounded-xl max-w-lg bg-gray-800 p-4 m-5 gap-4">
-              <p>Combien coûte Nimbus?</p>
-            </div>
-
-            <div class="flex flex-col rounded-xl max-w-lg bg-gray-800 p-4 m-5 gap-4">
-              <p>Où puis-je regarder Nimbus?</p>
-            </div>
-            <div class="flex flex-col rounded-xl max-w-lg bg-gray-800 p-4 m-5 gap-4">
-              <p>Comment résilier mon abonnement?</p>
-            </div>
-          </div>
-
-      </div>
-
-      <footer class="border-t-gray-400"></footer>
-    </div>
+    </footer>
   </body>
 </html>
