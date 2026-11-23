@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nimbus</title>
+  </head>
+
+  <body class="min-h-screen bg-slate-950 text-white antialiased">
+
+    <header class="relative border-b border-slate-800 bg-slate-950">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+        <a href="#" class="text-2xl font-bold text-violet-500 transition-colors duration-200 hover:text-purple-300">Nimbus</a>
+
+        <input id="menu" type="checkbox" class="peer sr-only">
+
+        <nav class="absolute left-0 top-full hidden w-full flex-col gap-4 border-b border-slate-800 bg-[#04041a] p-4 peer-checked:flex md:static md:flex md:w-auto md:flex-row md:gap-8 md:border-0 md:bg-transparent md:p-0">
+          <a href="index.html" class="text-slate-300 hover:text-white">Accueil</a>
+          <a href="formula.html" class="text-slate-300 hover:text-white">Formules</a>
+          <a href="#" class="text-slate-300 hover:text-white">Aide</a>
+        </nav>
+
+        <div class="flex items-center gap-4">
+          <button
+          type="button"
+          class="cursor-pointer rounded-sm bg-violet-600 px-4 py-2 text-sm font-bold transition duration-200 hover:-translate-y-0.5 hover:bg-violet-500 hover:shadow-lg hover:shadow-purple-500/40 active:translate-y-0"
+        >
+          Se connecter
+        </button>
+          <label for="menu" class="cursor-pointer text-2xl leading-none md:hidden" aria-label="Menu">☰</label>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="bg-gradient-to-b from-purple-950/60 to-slate-950 px-6 pt-24 pb-32 text-center">
+        <h1 class="mx-auto max-w-3xl text-5xl font-extrabold leading-tight">
+          Une formule pour chaque écran.
+        </h1>
+        <p class="mx-auto mt-6 max-w-2xl text-lg text-slate-300">
+          Résiliez ou changer à tout moment. Sans engagement.
+        </p>
+      </section>
+
+      <section class=" grid grid-cols-1 gap-7 md:grid-cols-3 max-w-7xl mx-auto px-6 ">
+ 
+        <article class="relative flex flex-col rounded-2xl border-2 border-gray-600 bg-[#0f1424] p-6 transition-transform duration-300 hover:border-purple-500 hover:scale-[1.02] md:hidden md:p-7">
+          <h2 class="text-2xl font-bold">Mobile</h2>
+          <p class="mt-1 text-sm uppercase tracking-wide text-slate-400"> <span class="text-purple-400 font-bold">UNIQUEMENT SUR SMARTPHONE</span></p>
+          <p class="mt-6 text-4xl font-extrabold">4,99 € <span class="ml-0.5 text-base font-normal text-slate-400">/mois</span></p>
+          <ul class="mb-8 mt-6 space-y-3 text-slate-300">
+            <li>✓ 1 écran (Smartphone/Tablette) </li>
+            <li>✓ Qualité SD </li>
+            <li>✓ Téléchargement hors ligne</li>
+          </ul>
+          <button class="mt-auto w-full rounded-lg bg-gray-600 py-3.5 text-lg font-semibold text-white transition hover:bg-purple-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-300">
+            Choisir
+          </button>
+        </article>
+        
+        <article class="relative flex flex-col rounded-2xl border-2 border-gray-600 bg-[#0f1424] p-6 transition-transform duration-300 hover:border-purple-500 hover:scale-[1.02] md:p-7">
+          <h2 class="text-2xl font-bold">Essentiel</h2>
+          <p class="mt-1 text-sm uppercase tracking-wide text-slate-400">Pour démarrer</p>
+          <p class="mt-6 text-4xl font-extrabold">8,99 € <span class="ml-0.5 text-base font-normal text-slate-400">/mois</span></p>
+          <ul class="mb-8 mt-6 space-y-3 text-slate-300">
+            <li>✓ 1 écran à la fois</li>
+            <li>✓ Qualité HD</li>
+            <li>✓ Téléchargement hors ligne</li>
+          </ul>
+          <button class="mt-auto w-full rounded-lg bg-gray-600 py-3.5 text-lg font-semibold text-white transition hover:bg-purple-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-300">
+            Choisir
+          </button>
+        </article>
+
+        <article class="relative flex flex-col rounded-2xl border-2 border-violet-600 bg-[#0f1424] p-6 transition-transform duration-300 hover:border-purple-500 hover:scale-[1.02] md:p-7">
+          <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-violet-600 px-4 py-1 text-sm font-semibold text-violet-100">
+            Plus populaire
+          </span>
+          <h2 class="text-2xl font-bold">Standard</h2>
+          <p class="mt-1 text-sm uppercase tracking-wide text-slate-400">Le bon équilibre</p>
+          <p class="mt-6 text-4xl font-extrabold">13,99 € <span class="ml-0.5 text-base font-normal text-slate-400">/mois</span></p>
+          <ul class="mb-8 mt-6 space-y-3 text-slate-300">
+            <li>✓ 2 écrans en simultané</li>
+            <li>✓ Qualité Full HD</li>
+            <li>✓ Téléchargement hors ligne</li>
+            <li>✓ Profils enfants</li>
+          </ul>
+          <button class="mt-auto w-full rounded-lg bg-gray-600 py-3.5 text-lg font-semibold text-white transition hover:bg-purple-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-300">
+            Choisir
+          </button>
+        </article>
+   
+        <article class="relative flex flex-col rounded-2xl border-2 border-gray-600 bg-[#0f1424] p-6 transition-transform duration-300 hover:border-purple-500 hover:scale-[1.02] md:p-7">
+          <h2 class="text-2xl font-bold">Premium</h2>
+          <p class="mt-1 text-sm uppercase tracking-wide text-slate-400">Le grand confort</p>
+          <p class="mt-6 text-4xl font-extrabold">17,99 € <span class="ml-0.5 text-base font-normal text-slate-400">/mois</span></p>
+          <ul class="mb-8 mt-6 space-y-3 text-slate-300">
+            <li>✓ 4 écrans en simultané</li>
+            <li>✓ Qualité 4K + HDR</li>
+            <li>✓ Téléchargement hors ligne</li>
+            <li>✓ Profils enfants</li>
+          </ul>
+          <button class="mt-auto w-full rounded-lg bg-gray-600 py-3.5 text-lg font-semibold text-white transition hover:bg-purple-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-300">
+            Choisir
+          </button>
+        </article>
+
+      </section>
+
+      <section class=" mt-16 max-w-4xl md:mt-20 md:max-w-7xl mx-auto px-6 ">
+        <h2 class="text-2xl font-bold md:text-3xl">Comparer les formules</h2>
+
+        <div class="mt-8 space-y-4 md:hidden">
+          <div class="rounded-xl border border-slate-800 bg-[#0f1424] p-5">
+            <h3 class="font-bold">Écrans simultanés</h3>
+            <p class="mt-2 text-slate-400">Mobile : 1 · Essentiel : 1 · Standard : 2 · Premium : 4</p>
+          </div>
+          <div class="rounded-xl border border-slate-800 bg-[#0f1424] p-5">
+            <h3 class="font-bold">Qualité vidéo</h3>
+            <p class="mt-2 text-slate-400">Mobile : SD · Essentiel : HD · Standard : Full HD · Premium : 4K</p>
+          </div>
+          <div class="rounded-xl border border-slate-800 bg-[#0f1424] p-5">
+            <h3 class="font-bold">Profils enfants</h3>
+            <p class="mt-2 text-slate-400">Standard et Premium uniquement</p>
+          </div>
+        </div>
+   
+        <div class="mt-8 overflow-x-auto hidden md:block">
+          <table class="w-full min-w-30rem border-collapse text-left">
+            <thead>
+              <tr class="border-b border-slate-800 text-slate-400">
+                <th class="py-4 pr-4 font-normal">Fonctionnalité</th>
+                <th class="px-4 py-4 text-center font-normal">Essentiel</th>
+                <th class="px-4 py-4 text-center font-normal">Standard</th>
+                <th class="px-4 py-4 text-center font-normal">Premium</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-200">
+              <tr class="border-b border-slate-800">
+                <td class="py-5 pr-4">Écrans simultanés</td>
+                <td class="px-4 py-5 text-center">1</td>
+                <td class="px-4 py-5 text-center">2</td>
+                <td class="px-4 py-5 text-center">4</td>
+              </tr>
+              <tr class="border-b border-slate-800">
+                <td class="py-5 pr-4">Qualité vidéo</td>
+                <td class="px-4 py-5 text-center">HD</td>
+                <td class="px-4 py-5 text-center">Full HD</td>
+                <td class="px-4 py-5 text-center">4K + HDR</td>
+              </tr>
+              <tr class="border-b border-slate-800">
+                <td class="py-5 pr-4">Profils enfants</td>
+                <td class="px-4 py-5 text-center">—</td>
+                <td class="px-4 py-5 text-center">✓</td>
+                <td class="px-4 py-5 text-center">✓</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+
+
+    </main>
+
+
+    <footer class="border-t border-slate-800">
+      <div class="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-6 py-12 text-sm md:grid-cols-4">
+        <div class="flex flex-col gap-3">
+          <h4 class="font-semibold">Assistance</h4>
+          <a href="#" class="text-slate-400 transition-colors duration-200 hover:text-white">Centre d'aide</a>
+          <a href="#" class="text-slate-400 transition-colors duration-200 hover:text-white">Contact</a>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h4 class="font-semibold">Entreprise</h4>
+          <a href="#" class="text-slate-400 transition-colors duration-200 hover:text-white">À propos</a>
+          <a href="#" class="text-slate-400 transition-colors duration-200 hover:text-white">Carrières</a>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h4 class="font-semibold">Légal</h4>
+          <a href="#" class="text-slate-400 transition-colors duration-200 hover:text-white">Confidentialité</a>
+          <a href="#" class="text-slate-400 transition-colors duration-200 hover:text-white">Conditions</a>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h4 class="font-semibold">Nimbus</h4>
+          <p class="text-slate-400">© 2026 Nimbus. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+    
+    
+  </body>
+</html>
